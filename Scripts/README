@@ -1,1 +1,4 @@
-Scripts for running the code
+GARCH_(1,1)_+LSTM(256,128).ipynb  -  Testing the performance of Hybrid GARCH LSTM Models for the six metal return series.
+GARCH_(1,1)_+LSTM(256,128).ipynb  -  Testing the performance of LSTM Models for the six metal return series.
+DNN_Models.py  -  Testing the performace of MLP, CNN, LSTM-RNN and GRU-RNN models for the six metal return series.
+metal (1).R  -  Running the GARCH models in R
