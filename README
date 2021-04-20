@@ -1,1 +1,18 @@
-The problem of time series forecasting has always been an challenge for the financial community. The major problem with time series analysis is the problem of non staionarity in the data and the lack of trend and seasonality in Financial data. This paper studies the applicability of popular econometric and deep neural networks as forecasters for non stationary financial time series data. We evaluate the volatility of Copper and Tin two of the most important non ferrous metals of India using several Econometric models like sGARCH (Standard Autoregressive conditional heteroskedasticity), EGARCH (Exponential GARCH) and TGARCH (Threshold GARCH). We also employ different LSTM ( Long short-term memory) models which are a sub model of the RNN (Recurrent Neural Network). These models are evaluated over the following two metals using 15 years of Financial Time series data. Single step forecasting for several window sizes was used to check the forecast accuracy of the LSTM models. In the study we also attempt to apply the multiple variations of the GARCH model and combine it with the LSTM models to compare the predictions of the hybrid models with the single input based models. By comparing the values of four different types of loss functions we can observe that the traditional GARCH models have a  really poor prediction power while the LSTM and hybrid LSTM models have a much superior predictability. On average the hybrid models are found to perform better than the single input RNN models when evaluated on longer window sizes periods while the single input models perform better on shorter window sizes.
+This study investigates the advantage of combining the forecasting abilities of multiple well
+known generalized autoregressive conditional heteroscedasticity (GARCH)-type models such
+as the standard GARCH (sGARCH), exponential GARCH (eGARCH), and threshold
+GARCH (tGARCH) models with advanced deep learning models to analyze and predict the
+volatility dynamics of four important non-ferrous metals (Nickel, Copper, Tin, and Lead) in
+the Indian commodity market. This paper proposes integrating the forecasts of one to three
+GARCH-type models into ensemble learning-based hybrid LSTM (long short-term memory)
+models to forecast commodity price volatility. We further evaluate the forecasting
+performance of these models with respect to standalone LSTM and GARCH-type models in
+terms of root mean squared error (RMSE), mean absolute error (MAE), and mean absolute
+percentage error (MAPE) to confirm that the addition of GARCH model forecasts can
+significantly improve overall forecast accuracy. The results suggest that combining the
+information from multiple GARCH-types into a hybrid LSTM model can indeed lead to
+superior volatility forecasting capability, with the SET-LSTM, which represents the model
+that combines forecasts of the sGARCH, eGARCH, and tGARCH into the LSTM hybrid,
+showing the best overall results for all metals, barring a few exceptions. Moreover, the
+Diebold-Mariano and Wilcoxon signed rank tests are applied for checking the
+equivalence of forecasting accuracy.
